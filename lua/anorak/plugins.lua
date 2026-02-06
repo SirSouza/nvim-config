@@ -21,7 +21,7 @@ require("lazy").setup({
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
-		priority = 100,
+		priority = 1000,
 	},
 
 
@@ -29,13 +29,24 @@ require("lazy").setup({
 	{
 		"marko-cerovac/material.nvim",
 		name = "material",
-		priority = 100,
-		config = function()
-			vim.g.material_style = "deep ocean"
-			vim.cmd.colorscheme("material")
-		end,
+		priority = 1000,
+--		config = function()
+--			vim.g.material_style = "deep ocean"
+--			vim.cmd.colorscheme("material")
+--		end,
 	},
-
+  
+  -- Gruvbox theme configuration (the most beaultiful theme in the world)
+  -- and if you don't agree, you have the right to be wrong ;)
+  {
+    "ellisonleao/gruvbox.nvim",
+    name = "Gruvbox",
+    priority = 1000,
+    config = function ()
+      vim.o.background = "dark"
+      vim.cmd.colorscheme("gruvbox")
+    end,
+  },
 	-- Statusline
 	{
 		"nvim-lualine/lualine.nvim",
