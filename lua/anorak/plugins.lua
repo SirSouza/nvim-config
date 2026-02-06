@@ -30,6 +30,10 @@ require("lazy").setup({
 		"marko-cerovac/material.nvim",
 		name = "material",
 		priority = 100,
+		config = function()
+			vim.g.material_style = "deep ocean"
+			vim.cmd.colorscheme = ("material")
+		end,
 	},
 
 	-- Statusline
