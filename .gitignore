@@ -1,0 +1,11 @@
+ # Lazy.nvim
+ lazy-lock.json
+
+ # Plugin data
+ plugin/
+
+ # Logs
+ *.log
+
+ # Compiled files
+ *.luac
