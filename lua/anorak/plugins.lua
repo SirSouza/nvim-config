@@ -22,6 +22,10 @@ require("lazy").setup({
 		"catppuccin/nvim",
 		name = "catppuccin",
 		priority = 1000,
+    config = function ()
+      vim.o.background = "dark"
+      vim.cmd.colorscheme("catppuccin")
+    end,
 	},
 
 
@@ -42,10 +46,10 @@ require("lazy").setup({
     "ellisonleao/gruvbox.nvim",
     name = "Gruvbox",
     priority = 1000,
-    config = function ()
-      vim.o.background = "dark"
-      vim.cmd.colorscheme("gruvbox")
-    end,
+    --config = function ()
+    --  vim.o.background = "dark"
+    --  vim.cmd.colorscheme("gruvbox")
+    --end,
   },
 	-- Statusline
 	{
